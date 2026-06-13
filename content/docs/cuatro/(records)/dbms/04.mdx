@@ -1,0 +1,48 @@
+---
+title: Experiment 04
+---
+
+### **Aim**
+> To study and implement various data constraints in SQL
+
+### **Theory**
+
+<Callout type="info" title="Note">
+Write the following from the links provided:
+- [Not Null](https://www.w3schools.com/mysql/mysql_notnull.asp)
+- [Unique](https://www.w3schools.com/mysql/mysql_unique.asp)
+- [Primary Key](https://www.w3schools.com/mysql/mysql_primarykey.asp)
+- [Foreign Key](https://www.w3schools.com/mysql/mysql_primarykey.asp)
+- [Check](https://www.w3schools.com/mysql/mysql_check.asp)
+- [Default](https://www.w3schools.com/mysql/mysql_default.asp)
+</Callout>
+
+### **Commands**
+```sql
+CREATE TABLE Departments (
+    DepartmentID INT PRIMARY KEY,
+    DepartmentName VARCHAR(50) NOT NULL UNIQUE
+);
+
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE,
+    Age INT CHECK (Age >= 18),
+    DepartmentID INT,
+    Salary DECIMAL(10, 2) DEFAULT 30000.00,
+    FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
+);
+DESCRIBE Employees;
+```
+
+<Callout type="info" title="Table">
+Draw the table that the following script will give as output(on the left-hand side of the record)  
+```sql
+DESCRIBE Employees;
+```
+</Callout>
+
+### **Conclusion**
+> Successfully studied and implemented SQL data constraints

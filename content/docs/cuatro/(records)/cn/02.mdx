@@ -1,0 +1,61 @@
+---
+title: Experiment 02
+sidebar_label: EXP 02
+---
+
+### **Aim**
+> To study the detailed technical specifications, characteristics, and performance metrics of various computer network cables and their respective connectors.
+
+### **Apparatus Required**
+- A computer with internet access
+- Web browser to access manufacturer data sheets and specifications
+- Reference materials or spec sheets from networking companies (e.g., Belden, CommScope, Panduit)
+
+### **Theory**
+Network cables are the physical transmission media used to connect and transfer data between computers, routers, switches, and storage networks. The primary types of cables used in modern networking include Twisted Pair, Coaxial, and Fiber Optic cables, each utilizing specific connectors tailored to their physical properties.
+  - **Twisted Pair (UTP/STP):** The worldwide standard for Local Area Networks (LANs). Utilizes copper wires twisted together to cancel out electromagnetic interference (EMI).
+  - **Fiber Optic:** Uses glass or plastic threads to transmit data as light. Used for ultra-high-speed, long-distance, and data center connections.
+  - **Coaxial Cable:** Features a central copper conductor surrounded by an insulating layer and a metallic shield. It is highly resistant to signal interference and is widely used for broadband internet and cable television infrastructure.
+
+##### **General Ethernet Cable Specifications**
+Before looking at specific companies, it is important to understand the baseline standards set by the IEEE. Different categories of Ethernet cables dictate the maximum speed and bandwidth (frequency) they can handle over specific distances.
+| Category	| Max | Speed |	Bandwidth	Max Distance (at Max Speed) |	Primary Use Case |
+|-----------|-----|-------|---------------------------------------|------------------|
+| Cat5e     | 1 Gbps | 100 MHz | 100 meters | Basic home & office networks |
+| Cat6      | 10 Gbps | 250 MHz | 55 meters | Standard enterprise networking |
+| Cat6a     | 10 Gbps | 500 MHz | 100 meters | Data centers, large commercial spaces |
+| Cat8      | 40 Gbps | 2000 MHz | 30 meters | Switch-to-switch server connections |
+
+##### **Comparing Specifications Across Major Companies**
+While standard bodies dictate the baseline speeds, top networking manufacturers implement proprietary engineering to enhance durability, reduce interference, and improve installation flexibility. Based on current market specifications, here is how the top three enterprise companies differ:
+- **A. Belden**
+  - **Design Focus:** Industrial ruggedness, heavy shielding, and maximum signal integrity.
+  - **Specifications & Differences:** Belden cables (especially their Cat6a and Cat8 lines) often feature proprietary bonded-pair technology and robust S/FTP (Shielded/Foiled Twisted Pair) construction. This makes the physical cable slightly more rigid and heavier than competitors, but it drastically reduces alien crosstalk (AXT) in noisy industrial environments.
+  - **Connectors:** Belden utilizes the "REVConnect" system, a unique core termination process that allows the exact same core to be used for both jacks and plugs, ensuring extreme reliability in high-vibration settings.
+
+- **B. CommScope** (Systimax / Netconnect)
+
+  - **Design Focus:** Enterprise data centers, eco-friendly materials, and plenum-rated safety.
+  - **Specifications & Differences:** CommScope excels in optimizing the twist rates of the copper pairs to maximize high-frequency performance (often testing their Cat6 up to 550 MHz) without making the cable jacket overly thick. They are highly regarded for their fire-resistant FEP (Fluorinated Ethylene Propylene) insulation in plenum spaces.
+  - **Connectors:** They lead the market in high-density MPO/MTP fiber connectors and tool-less RJ-45 jacks designed to significantly speed up massive enterprise deployments.
+
+- **C. Panduit**
+  - **Design Focus:** High-density routing, space-saving, and ease of installation.
+  - **Specifications & Differences:** Panduit heavily markets their "MaTriX" technology and thinner diameter cables (such as their 28 AWG Cat6a patch cords). By reducing the outer diameter of the cable, Panduit allows network engineers to fit up to 50% more cables in a standard conduit or tray, which is highly sought after for tightly packed server racks.
+  - **Connectors:** Panduit’s TX6A connectors are engineered specifically to terminate these thinner-gauge wires reliably while still maintaining strict 10 Gbps throughput.
+
+##### **Connectors Comparison**
+  - **RJ-45 (Copper):** The standard 8-pin connector for twisted-pair cables. Variations exist between companies based on whether the cable is solid/stranded or shielded/unshielded.
+  - **F-Type / BNC (Coaxial):** F-type is the standard threaded screw-on connector for broadband coaxial drops, while BNC is a quick-disconnect bayonet style used in specialized RF and video networking.
+  - **LC (Lucent Connector - Fiber):** Small form factor and high density; the modern standard for fast transceivers (SFP/SFP+).
+  - **SC (Standard Connector - Fiber):** Uses a push-pull mechanism; slightly older and bulkier, but highly durable.
+  - **ST (Straight Tip - Fiber):** Features a bayonet-style twist lock, mostly used in legacy multimode fiber networks.
+
+
+:::note Images
+Draw or paste images of the various types of cables and connectors mentioned above on the plain side of the record.
+:::
+
+
+### **Conclusion**
+> By reviewing the specifications of major manufacturers like Belden, CommScope, and Panduit, it was observed that while all comply with IEEE standards, they differentiate their products through proprietary shielding, wire gauge modifications, and specialized connector technologies to suit specific industrial or data center needs.

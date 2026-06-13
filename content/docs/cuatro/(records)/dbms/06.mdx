@@ -1,0 +1,38 @@
+---
+title: Experiment 06
+---
+
+### **Aim**
+> To demonstrate the use of various DML operations i.e., insertion, deletion, and updating
+
+### **Theory**
+
+<Callout type="info" title="Note">
+Write the following:
+- [INSERT INTO](https://www.w3schools.com/MySQL/mysql_insert.asp)
+- [DELETE](https://www.w3schools.com/MySQL/mysql_delete.asp)
+- [UPDATE](https://www.w3schools.com/MySQL/mysql_update.asp)
+</Callout>
+
+### **Commands**
+```sql
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Age, Department)
+VALUES (1, 'John', 'Doe', 30, 'HR'),
+VALUES (2, 'Jane', 'Smith', 25, 'IT');
+
+SELECT * FROM Employees; -- Draw the table "After Insertion"
+
+DELETE FROM Employees
+WHERE EmployeeID = 1;
+
+SELECT * FROM Employees; -- Draw the table "After Deletion"
+
+UPDATE Employees
+SET Age = 31
+WHERE EmployeeID = 2;
+
+SELECT * FROM Employees; -- Draw the table "After Updating"
+```
+
+### **Conclusion**
+> Successfully implemented insertion, deletion and updating (DML) commands

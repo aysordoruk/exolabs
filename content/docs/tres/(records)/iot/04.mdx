@@ -1,0 +1,38 @@
+---
+title: Experiment 04
+---
+
+### **Aim of the experiment**
+> Write a program to make three LEDs blink in a sequence
+
+
+### **Components Required**
+- Arduino UNO board
+- 3 LEDs (different colors recommended)
+- 3 × 220Ω resistors
+- Jumper wires
+
+
+### **Code**
+```cpp
+const int pins[] = {11, 12, 13};
+
+void setup() {
+  for (int i = 0; i < 3; i++) {
+    pinMode(pins[i], OUTPUT);
+  }
+}
+
+void loop() {
+  for (int i = 0; i < 3; i++) {
+    digitalWrite(pins[i], HIGH);
+    delay(500);
+    digitalWrite(pins[i], LOW);
+    delay(500);
+  }
+}
+```
+
+
+### **Conclusion**
+> The experiment successfully created a sequential blinking pattern across three LEDs, demonstrating control of multiple digital outputs

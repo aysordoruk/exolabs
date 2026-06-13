@@ -1,0 +1,58 @@
+---
+title: Experiment 03
+---
+
+### **Aim**
+> To study and implement various data types in SQL
+
+### **Theory**
+**Different datatypes**
+
+<Callout type="info" title="Note">
+Write the following from [W3Schools](https://www.w3schools.com/mysql/mysql_datatypes.asp):
+- Numeric Data Types
+  - INT
+  - DECIMAL
+  - FLOAT
+  - BOOL
+- String Data Types
+  - CHAR
+  - VARCHAR
+  - TEXT
+  - BLOB
+  - LONGBLOB
+  - ENUM
+- Date and Time Data Types
+  - DATE
+  - TIME
+  - YEAR
+</Callout>
+
+### **Commands**
+```sql
+CREATE TABLE ProductInventory (
+    ProductID INT,
+    Price DECIMAL(10, 2),
+    Weight FLOAT,
+    ProductCode CHAR(5),
+    ProductName VARCHAR(100),
+    Description TEXT,
+    ProductImage BLOB,
+    LargeImage LONGBLOB,
+    Category ENUM('Electronics', 'Clothing', 'Furniture'),
+    MfgDate DATE,
+    MfgTime TIME,
+    MfgYear YEAR
+);
+DESCRIBE ProductInventory;
+```
+
+<Callout type="info" title="Table">
+Draw the table that the following script will give as output!
+```sql
+DESCRIBE ProductInventory;
+```
+</Callout>
+
+### **Conclusion**
+> Successfully studied and implemented various SQL data types

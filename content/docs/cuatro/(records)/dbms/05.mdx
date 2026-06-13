@@ -1,0 +1,54 @@
+---
+title: Experiment 05
+---
+
+### **Aim**
+> To write SQL queries for table creation and modification
+
+### **Theory**
+- [Create Table](https://www.w3schools.com/MySQL/mysql_create_table.asp) // write from the link...
+- [Alter Table](https://www.w3schools.com/MySQL/mysql_alter.asp) // write from the link...
+
+- **Rename Table**
+  > This command is used to change the name of an existing table in the database. It allows us to give a new name to the table while keeping all its data and structure intact. <br /> 
+  ```sql title="Syntax"
+  RENAME TABLE old_table_name TO new_table_name;
+  ```
+
+- **Truncate Table**
+  > This command is used to delete all the data from a table while keeping the structure of the table intact. It is faster than the DELETE command as it does not log individual row deletions. <br />
+  ```sql title="Syntax"
+  TRUNCATE TABLE table_name;
+  ```
+- **Drop Table**
+  > This command is used to completely remove a table from the database, including all its data and structure. Once a table is dropped, it cannot be recovered. <br />
+  ```sql title="Syntax"
+  DROP TABLE table_name;
+  ```
+
+
+### **Commands**
+```sql
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Age INT,
+    Department VARCHAR(50)
+);
+ALTER TABLE Employees
+ADD Email VARCHAR(100);
+
+ALTER TABLE Employees
+MODIFY Age SMALLINT;
+
+ALTER TABLE Employees
+DROP COLUMN Department;
+
+RENAME TABLE Employees TO Staff;
+TRUNCATE TABLE Staff;
+DROP TABLE Staff;
+```
+
+### **Conclusion**
+> Successfully implemented Data Definition Language (DDL) commands

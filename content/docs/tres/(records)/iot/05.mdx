@@ -1,0 +1,32 @@
+---
+title: Experiment 05
+---
+
+### **Aim of the experiment**
+> To write a program to display a message on the serial monitor
+
+---
+
+### **Components Required**
+- Arduino UNO board
+- USB cable
+
+---
+
+### **Code**
+```cpp
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  Serial.print("Hello World!");
+  Serial.println("Welcome, to UGIE");
+  
+  delay(1000);
+}
+```
+
+
+### **Conclusion**
+> The experiment successfully established serial communication, displaying messages on the serial monitor at regular intervals

@@ -1,0 +1,42 @@
+---
+title: Experiment 03
+---
+
+### **Aim of the experiment**
+> Write a program to make an LED blink for a specific number of times
+
+
+### **Components Required**
+- Arduino UNO board
+- LED (any color)
+- 220Ω resistor
+- Jumper wires
+
+
+### **Code**
+```cpp
+const int pin = 13;
+
+void setup() {
+  pinMode(pin, OUTPUT);
+}
+
+void loop() {
+  int count = 5;
+  
+  while(count > 0) {
+    digitalWrite(pin, HIGH);
+    delay(500);
+    digitalWrite(pin, LOW);
+    delay(500);
+    
+    count -= 1;
+  }
+  
+  delay(2000);
+}
+```
+
+
+### **Conclusion**
+> The experiment successfully implemented controlled iteration to make an LED blink exactly 5 times before pausing and repeating

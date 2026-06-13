@@ -1,0 +1,34 @@
+---
+title: Experiment 02
+---
+
+### **Aim of the experiment**
+> Write a program to make an LED blink
+
+
+### **Components Required**
+- Arduino UNO board
+- LED (any color)
+- 220Ω resistor
+- Jumper wires
+
+
+### **Code**
+```cpp
+const int pin = 13;
+
+void setup() {
+  pinMode(pin, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(pin, HIGH);
+  delay(1000);
+  digitalWrite(pin, LOW);
+  delay(1000);
+}
+```
+
+
+### **Conclusion**
+> The experiment successfully demonstrated basic digital output control by making an LED blink at regular one-second intervals

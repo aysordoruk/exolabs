@@ -1,0 +1,56 @@
+---
+title: Experiment 04
+sidebar_label: EXP 04
+---
+
+### **Aim**
+> To study file reading operations, standard outputs, and command-line text editors in Linux
+
+
+### **Theory**
+- **`cat` (Concatenate)**
+  - Concatenates files and print it on the standard output
+  - **Syntax:** `cat [OPTIONS] [FILE]....`
+  - **Options:** `-n` adds line numbers for all the output lines `-E` displays a $ (dollar sign) at the end of each line
+
+- **`echo` (Echo)**
+  - Prints the given input string to standard output
+  - **Syntax:** `echo [options..] [string]`
+
+- **`nano` (Nano Editor)**
+  - A modeless, beginner-friendly command-line text editor featuring on-screen shortcuts
+  - **Syntax:** `nano [filename]`
+
+- **`vi` (Visual Editor)**
+  - A highly efficient, modal visual text editor standard across UNIX/Linux systems requiring navigation and insert modes
+  - **Syntax:** `vi [filename]`
+
+
+### **Commands**
+
+```bash
+$ echo "Welcome to the OS Lab" > greeting.txt
+$ echo "This is the second line." >> greeting.txt
+
+$ cat greeting.txt
+Welcome to the OS Lab
+This is the second line.
+
+$ cat -n greeting.txt
+  1  Welcome to the OS Lab
+  2  This is the second line.
+
+$ cat -E greeting.txt
+Welcome to the OS Lab$
+This is the second line.$
+
+$ nano simple_script.sh
+(Type script contents, press Ctrl+O to save, and Ctrl+X to exit)
+
+$ vi config_file.conf
+(Press 'i' to insert text. Type contents. Press 'Esc', then type ':wq' to save and quit)
+```
+
+
+### **Conclusion**
+> Text creation and inspection tools were successfully utilized. The echo command was used to generate standard output, cat was applied with formatting options to display file contents, and both the nano and vi text editors were successfully navigated to modify internal file data

@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "title": "Semester 3",
+  "description": "Database of the third semester.",
+  "icon": "Terminal",
+  "pages": [
+    "---Records---",
+    "...(records)"
+  ]
+}
